@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import reportWebVitals from './reportWebVitals';
 import 'antd/dist/antd.css';
 ReactDOM.render(

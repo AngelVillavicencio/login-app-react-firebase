@@ -1,12 +1,11 @@
 import { initializeApp } from "firebase/app";
 const firebaseConfig = {
-  apiKey: "AIzaSyAs7UBIpMDBV1vZmeN0szF367ctLJMh7kM",
-  authDomain: "pokewallet-a03ef.firebaseapp.com",
-  databaseURL: "https://pokewallet-a03ef-default-rtdb.firebaseio.com",
-  projectId: "pokewallet-a03ef",
-  storageBucket: "pokewallet-a03ef.appspot.com",
-  messagingSenderId: "819835590475",
-  appId: "1:819835590475:web:89b975f9eb5b2fd0c87ace",
+  apiKey: "AIzaSyDux0r46UxnLMEX8kvba8RrrfudMu3c_Ho",
+  authDomain: "cdp-app-peru.firebaseapp.com",
+  projectId: "cdp-app-peru",
+  storageBucket: "cdp-app-peru.appspot.com",
+  messagingSenderId: "622795475008",
+  appId: "1:622795475008:web:0c3e40a8ba8c4ed95a37a5"
 };
 
 export const app = initializeApp(firebaseConfig);
