@@ -8,39 +8,12 @@ import NotFound from "../../features/pages/NotFound/Index";
 import { AuthProvider } from "../../features/context/authContext/Index";
 //import { ApiGPTProvider } from "../../features/context/apiGPTContext/Index";
 import ProtectedRoutes from "./ProtectedRoutes/Index";
+import RoutesComponent from "../RoutesComponent";
 const Index = () => {
   return (
     <BrowserRouter>
       <AuthProvider>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <ProtectedRoutes>
-                <Home />
-              </ProtectedRoutes>
-            }
-          />
-          <Route
-            path="/campanas"
-            element={
-              <ProtectedRoutes>
-                <Tips />
-              </ProtectedRoutes>
-            }
-          />
-          <Route
-            path="/clientes"
-            element={
-              <ProtectedRoutes>
-                <Tips />
-              </ProtectedRoutes>
-            }
-          />
-          <Route path="/login" element={<Login></Login>}></Route>
-          <Route path="/register" element={<Register></Register>}></Route>
-          <Route path="*" element={<NotFound></NotFound>} ></Route>
-        </Routes>
+        <RoutesComponent></RoutesComponent>
       </AuthProvider>
     </BrowserRouter>
   );

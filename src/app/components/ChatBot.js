@@ -11,12 +11,12 @@ import {
     TypingIndicator,
 } from '@chatscope/chat-ui-kit-react';
 
-const API_KEY = "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"
+const API_KEY = "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"
 
 const Chatbot = () => {
     const [messages, setMessages] = useState([
         {
-            message: "Hello, I'm ChatGPT! Ask me anything!",
+            message: "Hola, estoy para ayudarte en mejorar tu proceso en publicidad",
             sentTime: "just now",
             sender: "ChatGPT",
         },
@@ -100,7 +100,7 @@ const Chatbot = () => {
                     </a>
                 </div>
 
-                <MainContainer>
+                <MainContainer className='rounded-xl'>
                     <ChatContainer>
                         <MessageList
                             scrollBehavior="smooth"

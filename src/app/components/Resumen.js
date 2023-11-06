@@ -3,11 +3,9 @@ import React, { useState } from "react";
 
 const Resumen = ({ onSubmit }) => {
 
-
-
     return (
         <>
-            <section className="bg-white">
+            <section className="bg-white sticky top-0 z-10">
                 <div className="mx-auto max-w-screen-xl mb-0 pb-0">
 
                     <Divider orientation="left">Resumen</Divider>

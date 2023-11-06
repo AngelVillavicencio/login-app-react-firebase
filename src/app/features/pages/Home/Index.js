@@ -76,9 +76,14 @@ const Index = () => {
 
         <Filter></Filter>
         <Resumen></Resumen>
-        <div className="flex items-start justify-around">
-          <TableComponent title={"Categorías visitadas"} columnas={["Nombre de categoría", "Número de visitas"]} rows={[{ title: "Muebles de Dormitorio", subtitle: "50" }, { title: "Electrodomésticos de Cocina", subtitle: "100" }]} ></TableComponent>
-          <TableComponent title={"Productos visitados"} columnas={["Nombre del producto", "Número de visitas", "Url"]} rows={[{ title: "consola-nintendo-switch-modelo-oled-con-white-joy-con-heg-s-kaaaa", subtitle: "100", url: "https://www.efe.com.pe/consola-nintendo-switch-modelo-oled-con-white-joy-con-heg-s-kaaaa.html" }, { title: "consola-xbox-serie-s-1tb-twvs4000727", subtitle: "60", url: "https://www.efe.com.pe/consola-xbox-serie-s-1tb-twvs4000727.html" }, { title: "consola-xbox-serie-s-1tb-twvs4000727", subtitle: "40", url: "https://www.efe.com.pe/consola-xbox-serie-s-1tb-twvs4000727.html" }, { title: "consola-xbox-serie-s-1tb-twvs4000727", subtitle: "30", url: "https://www.efe.com.pe/consola-xbox-serie-s-1tb-twvs4000727.html" }, { title: "consola-xbox-serie-s-1tb-twvs4000727", subtitle: "10", url: "https://www.efe.com.pe/consola-xbox-serie-s-1tb-twvs4000727.html" }]} ></TableComponent>
+        <div className="grid gap-4 grid-flow-col">
+          <div className="col-span-8">
+            <TableComponent title={"Categorías visitadas"} columnas={["Nombre de categoría", "Número de visitas"]} rows={[{ title: "Muebles de Dormitorio", subtitle: "50" }, { title: "Electrodomésticos de Cocina", subtitle: "100" }]} ></TableComponent>
+          </div>
+          <div className="col-span-4">
+            <TableComponent title={"Productos visitados"} columnas={["Nombre del producto", "Número de visitas", "Url"]} rows={[{ title: "consola-nintendo-switch-modelo-oled-con-white-joy-con-heg-s-kaaaa", subtitle: "100", url: "https://www.efe.com.pe/consola-nintendo-switch-modelo-oled-con-white-joy-con-heg-s-kaaaa.html" }, { title: "consola-xbox-serie-s-1tb-twvs4000727", subtitle: "60", url: "https://www.efe.com.pe/consola-xbox-serie-s-1tb-twvs4000727.html" }, { title: "consola-xbox-serie-s-1tb-twvs4000727", subtitle: "40", url: "https://www.efe.com.pe/consola-xbox-serie-s-1tb-twvs4000727.html" }, { title: "consola-xbox-serie-s-1tb-twvs4000727", subtitle: "30", url: "https://www.efe.com.pe/consola-xbox-serie-s-1tb-twvs4000727.html" }, { title: "consola-xbox-serie-s-1tb-twvs4000727", subtitle: "10", url: "https://www.efe.com.pe/consola-xbox-serie-s-1tb-twvs4000727.html" }]} ></TableComponent>
+          </div>
+
         </div>
 
 
@@ -86,7 +91,7 @@ const Index = () => {
 
         <Divider orientation="left" className="mb-4 mt-4">Usa tu data de manera inteligente </Divider>
 
-        
+
 
         <Chatbot></Chatbot>
 
